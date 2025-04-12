@@ -79,7 +79,7 @@ public class ReplayFollower : MonoBehaviour
 
     void ReplayMovement()
     {
-        moveTimer += Time.deltaTime;
+        moveTimer += replaySpeed * Time.deltaTime;
 
         // Skip points if movetimer overflows 
         while (moveTimer > pointUpdateRate)
